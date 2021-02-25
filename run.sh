@@ -1,3 +1,3 @@
 clear
-g++ test.cpp -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system
+g++ test.cpp -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system 
 ./sfml-app

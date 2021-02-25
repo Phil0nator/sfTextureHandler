@@ -5,9 +5,15 @@ int main()
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
-
-    auto test = loadImage("bmp_24.bmp");
-
+    sf::Sprite test;
+    for (size_t i = 0; i < 256; i++)
+    {
+        test = TextureHandler::loadImage("bmp_24.bmp");
+    }
+    
+    
+    
+    
     while (window.isOpen())
     {
         sf::Event event;
